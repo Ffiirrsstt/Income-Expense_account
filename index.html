@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income-Expense account</title>
+    <link rel="stylesheet" href="style-head-section1.css">
+    <link rel="stylesheet" href="style-section2.css">
+</head>
+
+<body>
+    <div id="content">
+        <div class="nav"></div>
+        <div class="container">
+            <div>
+                <h1 id="IcExaccount" class="heading">Income-Expense account</h1>
+                <div id="Box">
+                    <select id="size" onchange="sizefont(value)" class="fl-one">
+                        <option value="fontS">
+                            Small font size.</option>
+                        <option value="fontM">
+                            Medium font size.</option>
+                        <option value="fontL" selected>Large font size.</option>
+                    </select>
+
+                </div>
+            </div>
+            <!-- ยอดเงิน -->
+            <section>
+                <div>
+                    <div class="fl-one">
+
+                        <div>
+                            <h1 id="currency">Remaining balance [$]</h1>
+                            <h2 id="balance">0</h2>
+                        </div>
+                    </div>
+                    <div style="align-items: center;flex-direction: row;" class="box fl-one flex-col">
+                        <div class="flex-col">
+                            <div class="FLEX">
+                                <h3 id="inc">Income</h3>
+                                <h2 id="income">0</h2>
+                            </div>
+                        </div>
+                        <div class="flex-col">
+                            <div class="FLEX">
+                                <h3 id="exp">Expense</h3>
+                                <h2 id="expense">0</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- รายการ -->
+            <section class="li">
+
+                <form id="sub">
+                    <div class="flex-col">
+                        <label id="Transaction" for="dataItem">Transaction</label>
+                        <input type="text" id="dataItem" placeholder="Add transaction">
+                    </div>
+                    <div class="flex-col">
+                        <label id="Amount" for="amountItem">Amount of money</label>
+                        <input type="number" id="amountItem" placeholder="Enter the amount of money">
+                    </div>
+                    <div class="flex-col">
+                        <label for="incExp">Income or Expenditure</label>
+                        <select id="incExp">
+                            <option value="income">Income</option>
+                            <option value="expense">Expense</option>
+                        </select>
+                    </div>
+                    <div id="submit">
+                        <button title="Submit" disabled>Submit</button>
+                    </div>
+                </form>
+                <button id="display" title="Show your transaction list">
+                    <h2>Show transactions</h2>
+                </button>
+                <div id="bg" class="fl-one none">
+                    <div id="allItemCss" class="flex-row mtb">
+                        <p id="TrST" class="fl-one">Transaction</p>
+                        <div id="box" class="none confirm flex-col">
+                            <p>Do you want to delete the transaction?</p>
+                            <div id="YN" class="flex-row">
+                                <button id="yes">
+                                    <h3>Yes</h3>
+                                </button>
+                                <button id="no">
+                                    <h3>No</h3>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="closed" class="flex-row">
+                            <button id="allitem" title="Show all items">
+                                <h3>Show all items</h3>
+                            </button>
+                            <button id="clear" title="Clear all transactions ">
+                                <h3>Clear all transactions</h3>
+                            </button>
+                        </div>
+                    </div>
+                    <div id="Frameforallitem" class="iframe">
+                        <ul id="list" class="flex-col">
+                        </ul>
+                    </div>
+            </section>
+        </div>
+    </div>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>

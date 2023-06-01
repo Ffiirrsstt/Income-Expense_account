@@ -1,0 +1,229 @@
+:root {
+  --green: #008744;
+  --cream: #faf0e6;
+  --red: #d62d20;
+  --gold: #e4d5b7;
+  --brown: #d9b99b;
+  --white: white;
+}
+
+#list {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#list li:last-child {
+  background: linear-gradient(to left, var(--cream), var(--gold));
+}
+
+.plus {
+  border-left: 1rem solid var(--green);
+}
+
+.neg {
+  border-left: 1rem solid var(--red);
+}
+
+.li {
+  position: relative;
+  background-color: var(--cream);
+  height: 76vh;
+}
+
+form {
+  font-size: 200%;
+}
+
+input {
+  font-size: 80%;
+  opacity: 0.5;
+  height: 5vh;
+  border: 0px;
+}
+input:focus,
+select:focus {
+  outline: none;
+}
+
+select {
+  font-size: 100%;
+  height: 6vh;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: var(--gold);
+  font-size: 80%;
+  width: 100%;
+  height: 5vh;
+  border: 0px;
+}
+
+button:hover {
+  background-color: var(--brown);
+  cursor: pointer;
+}
+
+#del {
+  border-right: 1px solid gainsboro;
+}
+
+#display {
+  margin-top: 5rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  height: fit-content;
+  width: 100%;
+}
+
+#display:hover {
+  background: linear-gradient(
+    to right,
+    var(--brown),
+    var(--gold),
+    var(--brown)
+  );
+}
+
+.mtb {
+  margin: 5% 0%;
+}
+.iframe {
+  height: 18vh;
+  font-size: 130%;
+  overflow: auto;
+}
+
+li {
+  background-color: var(--white);
+  display: flex;
+  border-radius: 3%;
+  justify-content: space-between;
+  padding: 2% 2% 2% 2%;
+  margin-bottom: 2%;
+}
+
+.alliframe {
+  height: 55vh;
+}
+.alliframe li {
+  display: flex;
+  align-items: center;
+  font-size: 130%;
+  height: 10vh;
+}
+
+.all-item {
+  border-radius: 10%;
+  font-size: 100%;
+}
+.all-item > div {
+  padding-right: 2%;
+}
+.all-item > div button:first-child {
+  display: none;
+}
+
+.bg-white {
+  position: relative;
+  padding-top: 1%;
+  background-color: var(--white);
+  border-radius: 10%;
+}
+
+.padding {
+  padding-left: 2%;
+  position: sticky;
+}
+
+#forX {
+  background: linear-gradient(to right, var(--brown), var(--gold));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 3%;
+  border-radius: 5%;
+  border-bottom-right-radius: 100%;
+  border-top-right-radius: 100%;
+  font-size: 120%;
+}
+
+#forX:hover {
+  color: var(--white);
+}
+
+.del {
+  opacity: 0.5;
+  color: var(--gold);
+}
+
+.del.plus {
+  background: linear-gradient(to right, var(--white), var(--green));
+}
+
+.del.neg {
+  background: linear-gradient(to right, var(--white), var(--red));
+}
+
+.del div:nth-child(2) {
+  color: purple;
+}
+
+.hidden {
+  display: flex;
+  color: black;
+  font-size: 100%;
+  background-color: transparent;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hidden:hover {
+  background-color: transparent;
+}
+
+.confirm {
+  flex: 1.5;
+  background-color: var(--white);
+  border-radius: 10%;
+}
+
+.confirm p {
+  text-align: center;
+  font-size: 100%;
+}
+
+#yes {
+  display: block;
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 100%;
+  height: 3vh;
+  width: 50%;
+}
+
+#no {
+  background-color: var(--red);
+  color: var(--white);
+  font-size: 100%;
+  height: 3vh;
+  width: 50%;
+}
+
+p {
+  font-size: 150%;
+}
+
+.none {
+  display: none !important;
+}
+
+#closed {
+  flex: 2;
+}

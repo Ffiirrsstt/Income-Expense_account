@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,500;1,100&display=swap");
+
+:root {
+  --green: #008744;
+  --blue: #0057e7;
+  --red: #d62d20;
+  --yellow: #ffa700;
+  --white: #ffffff;
+}
+
+* {
+  cursor: default;
+  font-family: "Sarabun", sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.fl-one {
+  flex: 1;
+}
+
+.container {
+  padding: 0% 2% 0% 2%;
+}
+
+.nav {
+  position: relative;
+  background-color: var(--blue);
+  top: 0;
+  order: unset;
+  width: 100%;
+  height: 12vh;
+}
+
+#Box {
+  flex: 1;
+  display: flexbox;
+  flex-direction: row;
+}
+
+select:hover,
+input:hover,
+button:hover {
+  cursor: pointer;
+}
+
+#size {
+  background: linear-gradient(var(--white), var(--white));
+  color: black;
+  font-size: 150%;
+  text-align: center;
+  width: 80%;
+}
+
+body > div > div > div {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 12vh;
+}
+.heading {
+  flex: 3;
+  color: var(--white);
+  font-size: 250%;
+}
+#currency {
+  font-size: 200%;
+}
+
+#balance {
+  display: flex;
+  background-color: var(--white);
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+  border: 0px;
+  border-radius: 5%;
+  font-size: 400%;
+  margin: 8% 0px;
+}
+
+section {
+  display: inline-block;
+  padding: 2%;
+  margin-top: 2%;
+  border-radius: 2%;
+  width: 50%;
+  border: 0px;
+  background-color: var(--yellow);
+}
+
+.li {
+  border-left: 1px solid var(--white);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+.container {
+  display: flex;
+}
+
+body section:first-of-type {
+  height: 76vh;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.box {
+  display: flex;
+  border-top: 1px solid var(--white);
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.box > div {
+  flex: 1;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  font-size: 150%;
+}
+
+.box > div:first-child > div {
+  background-color: var(--green);
+  height: 15vh;
+  border: 0px;
+  border-top-left-radius: 10%;
+  border-bottom-left-radius: 10%;
+}
+
+.box > div:nth-child(2) > div {
+  background-color: var(--red);
+  height: 15vh;
+  border: 0px;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+}
+
+h2 {
+  margin: 2% 0;
+}
+
+body section:first-of-type > div {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.L {
+  font-size: 100%;
+}
+
+.M {
+  font-size: 85%;
+}
+
+.S {
+  font-size: 70%;
+}
+
+.FLEX {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
